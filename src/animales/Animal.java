@@ -29,7 +29,8 @@ class pruebaAnimal{
 
     public static void main(String[] args) {
         //var animal = new Animal();
-        var animal = new Perro(); // Caso 2
+       // var animal = new Perro(); // Caso 2
+        var animal = new Gato();
         imprimirSonido(animal);
 
     }
