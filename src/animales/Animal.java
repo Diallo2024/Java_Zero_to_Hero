@@ -14,6 +14,11 @@ class Perro extends Animal{
     public void hacerSonido(){
         System.out.println("Puedo ladrar");
     }
+
+    @Override
+    protected void  dormir(){
+        System.out.println("Duermo 15 horas al dí");
+    }
 }
 
 class pruebaAnimal{
@@ -23,7 +28,15 @@ class pruebaAnimal{
         var animal1 = new Animal();
         animal1.comer();
         animal1.dormir();
+        // animal1.hacerSonido(); // Este método no existe en la clase padre
+
+        System.out.println("\nClase Hija, soy un Perro");
+        var perro1 = new Perro();
+        perro1.comer();
+        perro1.dormir();
+        perro1.hacerSonido();
     }
+
 }
 
 
