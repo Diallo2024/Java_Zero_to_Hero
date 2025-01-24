@@ -1,4 +1,4 @@
-package prueba;
+package aritmetica.prueba;
 
 import aritmetica.Aritmetica;
 
