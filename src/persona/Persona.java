@@ -2,6 +2,7 @@ package persona;
 
 public class Persona {
     static int contadorPersonas = 0;
+    private int idPersona;
    private String nombre;
    private String apellido;
 
@@ -11,11 +12,21 @@ public class Persona {
         this.apellido = apellido;
         // Incrementar el atributo stático
         Persona.contadorPersonas++;
+
+        // Aqui asignamos el id único de la perocona con ayuda de la variable estática
+        this.idPersona = Persona.contadorPersonas;
     }
 
    @Override
     public String toString(){
-        return "Nombre: " + this.nombre + ", Apellido: " + this.apellido + ", Dir. Mem.  " + super.toString();
+        return "id: " + this.idPersona
+                + ", Nombre: " + this.nombre
+                + ", Apellido: " + this.apellido
+                + ", Dir. Mem.  " + super.toString();
+    }
+
+    public int getIdPersona() {
+        return this.idPersona;
     }
 
     void mostrarPersona(){
