@@ -1,7 +1,7 @@
 package persona;
 
 public class Persona {
-    static int contadorPersonas = 0;
+  private  static int contadorPersonas = 0;
     private int idPersona;
    private String nombre;
    private String apellido;
@@ -49,4 +49,9 @@ public class Persona {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
+
+    public static int getContadorPersonas(){
+        return Persona.contadorPersonas;
+    }
+
 }
