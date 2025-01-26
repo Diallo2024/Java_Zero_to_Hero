@@ -18,4 +18,13 @@ public class Orden {
         else
             System.out.println("Se ha superado el máximo de productos: " + Orden.MAX_PRODUCTOS);
     }
+
+    public double calcularTotal(){
+        double total = 0;
+        for (var i = 0; i < this.conadorProductos; i++){
+          var producto = this.productos[i];
+          total += producto.getPrecio(); // total = total + producto.getPrecio()
+        }
+        return total;
+    }
 }
