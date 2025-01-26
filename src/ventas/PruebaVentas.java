@@ -14,5 +14,12 @@ public class PruebaVentas {
         orden1.agregarProducto(producto1);
         orden1.agregarProducto(producto2);
         orden1.mostrarOrden();
+
+        // Segunda Orden
+        var orden2 = new Orden();
+        orden2.agregarProducto(new Producto("Playera ", 15.00));
+        orden2.agregarProducto(producto1);
+        orden2.agregarProducto(producto2);
+        orden2.mostrarOrden();
     }
 }
