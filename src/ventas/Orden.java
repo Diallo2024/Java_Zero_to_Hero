@@ -27,4 +27,14 @@ public class Orden {
         }
         return total;
     }
+
+    public void mostrarOrden(){
+        System.out.println("Id orden: " + this.idOrden);
+        var totalOrden = this.calcularTotal();
+        System.out.println("\tTotal de la Orden: $" + totalOrden);
+        System.out.println("\tProductos de la Orden: ");
+        for (var i = 0; i < conadorProductos; i++){
+            System.out.println("\t\t" + this.productos[i]);
+        }
+    }
 }
