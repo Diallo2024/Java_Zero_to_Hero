@@ -13,13 +13,15 @@ public class PruebaVentas {
         var orden1 = new Orden();
         orden1.agregarProducto(producto1);
         orden1.agregarProducto(producto2);
-        orden1.mostrarOrden();
+        System.out.println(orden1); // utilizando el método toString()
+        //orden1.mostrarOrden();
 
         // Segunda Orden
         var orden2 = new Orden();
         orden2.agregarProducto(new Producto("Playera ", 15.00));
         orden2.agregarProducto(producto1);
         orden2.agregarProducto(producto2);
-        orden2.mostrarOrden();
+        //orden2.mostrarOrden();
+        System.out.println(orden2); // utilizando el método toString()
     }
 }

@@ -28,7 +28,7 @@ public class Orden {
         return total;
     }
 
-    public void mostrarOrden(){
+   /* public void mostrarOrden(){
         System.out.println("Id orden: " + this.idOrden);
         var totalOrden = this.calcularTotal();
         System.out.println("\tTotal de la Orden: $" + totalOrden);
@@ -36,5 +36,17 @@ public class Orden {
         for (var i = 0; i < conadorProductos; i++){
             System.out.println("\t\t" + this.productos[i]);
         }
+    } */
+
+    @Override
+    public String toString(){
+        var resultado = "Id orden: " + this.idOrden + "\n";
+        var totalOrden = this.calcularTotal();
+        resultado = "\tTotal de la Orden: $" + totalOrden + "\n";
+        resultado = "\tProductos de la Orden: " + "\n";
+        for (var i = 0; i < conadorProductos; i++){
+            resultado += "\t\t" + this.productos[i] + "\n";
+        }
+        return resultado;
     }
 }
