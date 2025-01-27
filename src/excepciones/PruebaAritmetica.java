@@ -8,5 +8,8 @@ public class PruebaAritmetica {
         }catch (Exception e){
             System.out.println("Ocurrio un error");
         }
+        finally {
+            System.out.println("Se reviso la division entre cero");
+        }
     }
 }
