@@ -9,8 +9,6 @@ public class Excepciones {
             System.out.println("resultado = " + resultado); // Esta operacion genera una excepción en tiempo de ejecución
         }catch (Exception e){
             System.out.println("Ocurrió un error: " + e);
-
         }
-
     }
 }
