@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Listas {
     public static void main(String[] args) {
-        List milista = new ArrayList();
+        List <String> milista = new ArrayList <>(); // Asi especificamos el tipo de dato que queremos almacenar en la lista
         milista.add("Lunes");
         milista.add("Martes");
         milista.add("Miercoles");
