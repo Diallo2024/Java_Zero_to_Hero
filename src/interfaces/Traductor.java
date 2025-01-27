@@ -17,9 +17,22 @@ class Ingles implements Traductor{
     }
 }
 
+class Frances implements Traductor{
+    public void traducir(){
+        System.out.println("Traduciendo a Frances");
+    }
+
+}
+
 class PruebaTraductor{
     public static void main(String[] args) {
         Traductor ingles = new Ingles();
+        ingles.iniciarTradurctor();
         ingles.traducir();
+        // Traducir en Frances
+        Traductor frances = new Frances();
+        frances.iniciarTradurctor();
+        frances.traducir();
+
     }
 }
