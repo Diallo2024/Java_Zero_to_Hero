@@ -18,5 +18,10 @@ public class Listas {
         for (Object elemento: milista){
             System.out.println("Día de la semana: " + elemento);
         }
+
+        // Funciones lambda (funcion anonima de un codgio compactp)
+        milista.forEach( elemento -> {
+            System.out.println("Elemento: " + elemento);
+        });
     }
 }
