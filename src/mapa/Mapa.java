@@ -18,5 +18,11 @@ public class Mapa {
 
         System.out.println("\nNuevos valores del mapa: ");
         persona.entrySet().forEach(System.out::println);
+
+        // Iterar los elementos del mapa por separado
+        System.out.println("\nIterando el mapa (llave, valor)");
+        persona.forEach((llave, valor) -> {
+            System.out.println("Llave: " + llave + ", valor: " + valor);
+        });
     }
 }
