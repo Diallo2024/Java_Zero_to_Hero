@@ -15,6 +15,9 @@ public class Sets {
         System.out.println("Elementos del conjunto: ");
         conjunto.forEach(System.out::println);
 
-        //
+        //Remover elemento
+        conjunto.remove("Karla");
+        System.out.println("\nNuevos Elementos del set: ");
+        conjunto.forEach(System.out::println);
     }
 }
