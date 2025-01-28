@@ -11,6 +11,7 @@ public class Mapa {
         persona.put("edad", "31");
         persona.put("edad", "31"); // No se permiten duplicados
         System.out.println("Valores del mapa: ");
+        persona.remove("apellido");
         persona.entrySet().forEach(System.out::println);
 
         persona.put("edad", "35"); // Modificar el valor de una llave existente
