@@ -15,8 +15,8 @@ public class CrearArchivo {
            }
            else {
                //Creamos el archivo
-               var salid = new PrintWriter(new FileWriter(archivo));
-               salid.close(); // Se guarda el archivo a disco duro
+               var salida = new PrintWriter(new FileWriter(archivo));
+               salida.close(); // Se guarda el archivo a disco duro
                System.out.println("Se ha creado el archivo");
            }
        }catch (IOException e){

@@ -1,0 +1,4 @@
+las primeras
+lineas
+de nuestro
+archivo txt
